@@ -4,8 +4,13 @@ export const styles ={
       resizeMode: 'cover', 
     },
     logoImage: {
-        flex: 1,
+        width: 250,
+        height: 250,
         resizeMode: 'cover',
-    },
+        alignSelf: 'center',
+        alignItems: 'center', 
+        justifyContent: 'center', 
+        marginTop: 250,
+      },
    
   };

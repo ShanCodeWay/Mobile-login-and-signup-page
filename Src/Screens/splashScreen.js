@@ -12,18 +12,21 @@ import {
     StyleSheet,
     useEffect,
     logoImage,
-    SplashScreenStyles
+    SplashScreenStyles,
+   
 
    } from '../Imports/imports'
   
    import { styles as splashStyles } from '../Styles/splashScreenStyles';
-  
+   import LottieView from 'lottie-react-native';
+
+
   const SplashScreen = () => {
     
     useEffect(() => {
         setTimeout(() => {
           navigation.replace('Log-in'); 
-        }, 1000); 
+        }, 3000); 
       }, []);
 
       const navigation = useNavigation();
@@ -31,9 +34,13 @@ import {
     
         <ImageBackground source={backgroundImage} style={splashStyles.backgroundImage}>
         
-         <Image source={logoImage} style={splashStyles.logoImage}>
-
-         </Image>
+        <LottieView
+        source={require('../Images/logo1.json')} 
+        autoPlay
+        loop
+        style={splashStyles.logoImage}
+      />
+     
          
         </ImageBackground>
       

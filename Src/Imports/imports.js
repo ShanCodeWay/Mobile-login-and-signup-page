@@ -20,6 +20,7 @@ import signupScreenStyles from '../Styles/signupScreenStyles';
 import logoImage from '../Images/logo.gif'; 
 import SplashScreenStyles from '../Styles/splashScreenStyles';
 
+
 export {
   React,
   NavigationContainer,
@@ -42,6 +43,7 @@ export {
   SplashScreen,
   useEffect,
   logoImage,
-  SplashScreenStyles
+  SplashScreenStyles,
+ 
   
 };
