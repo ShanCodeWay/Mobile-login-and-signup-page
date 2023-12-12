@@ -8,6 +8,7 @@ export const styles ={
       paddingTop: 150, 
       alignItems: 'center',
       padding: 20,
+      
       elevation: 5,
     },
     bottom: {
