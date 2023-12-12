@@ -3,15 +3,19 @@ import {
     createStackNavigator,
     LogScreen,
     SignupScreen,
+    SplashScreen,
     Image,
-    AppbarImage, } from '../Imports/imports'
+    AppbarImage,
+
+    navigatorStyles } from '../Imports/imports'
  
+
 const Stack = createStackNavigator();
 function Navigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="LogScreen"
+        initialRouteName="Splash"
         screenOptions={{
           headerStyle: {
             backgroundColor: 'transparent',
@@ -37,7 +41,8 @@ function Navigator() {
             />
           ),
         }}
-      >
+      > 
+        <Stack.Screen name="Splash" component={SplashScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Log-in" component={LogScreen} />
         <Stack.Screen name="Sign up" component={SignupScreen} />
       </Stack.Navigator>
