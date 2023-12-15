@@ -21,7 +21,7 @@ import logoImage from '../Images/logo.gif';
 import SplashScreenStyles from '../Styles/splashScreenStyles';
 
 
-export {
+export  {
   React,
   NavigationContainer,
   createStackNavigator,
